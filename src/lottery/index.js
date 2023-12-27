@@ -8,8 +8,8 @@ import {
   setPrizeData,
   resetPrize
 } from "./prizeList";
-import { NUMBER_MATRIX } from "./config.js";
-import mockData from "./mock"
+import { NUMBER_MATRIX_2024 } from "./config.js";
+import mockData from "./dit_test"
 // layui.use(['layer', 'form'], function(){
 //   var layer = layui.layer
 //   ,form = layui.form;
@@ -1144,7 +1144,7 @@ function createHighlight() {
 
   year.split("").forEach(n => {
     highlight = highlight.concat(
-      NUMBER_MATRIX[n].map(item => {
+      NUMBER_MATRIX_2024[n].map(item => {
         return `${item[0] + xoffset}-${item[1] + yoffset}`;
       })
     );

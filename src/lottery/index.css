@@ -4,6 +4,29 @@ body {
   width: 100%;
 }
 
+.CName {
+  text-align: center;
+  font-size: 96px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF; /* 白色字体 */
+  -webkit-text-stroke: 1px #FFD700; /* 金色文字描边 */
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* 金色文字阴影，产生发光效果 */
+  background: linear-gradient(45deg, #FF4500, #FF0000); /* 红橙渐变背景 */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  100% {
+    background-position: 100%;
+  }
+}
+
+
+
 body {
   background:url(https://corp-wecom-cdn.elcapp.cn/outlet_test/material/image/20220113/23221981195248510.png) no-repeat;
   background-size:100% 100%;
